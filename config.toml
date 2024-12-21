@@ -45,13 +45,17 @@ id = "UA-00000000-0"
 
 # Language configuration
 
-#defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = false
+defaultContentLanguage = 'ja'
+defaultContentLanguageInSubdir = true
 [languages]
-	[languages.en]
+	[languages.ja]
+		languageName = "Japanese"
 		title = 'RNA-seq Study Note'
 		contentDir = 'content'
 		weight = 1
+	[languages.en]
+		languageName = "English"
+		weight = 2
 
 [markup]
   [markup.goldmark]
