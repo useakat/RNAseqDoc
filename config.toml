@@ -10,11 +10,12 @@ theme = ["docsy"]
 enableGitInfo = true
 
 # Language settings
-contentDir = "content/ja"
+languageCode = "ja"
+contentDir = "content"
 defaultContentLanguage = "ja"
-defaultContentLanguageInSubdir = false
+#defaultContentLanguageInSubdir = false
 # Useful when translating.
-enableMissingTranslationPlaceholders = true
+#enableMissingTranslationPlaceholders = true
 
 
 # Uncomment to enable support for page tags
