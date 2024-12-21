@@ -9,15 +9,6 @@ theme = ["docsy"]
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
-# Language settings
-languageCode = "ja"
-contentDir = "content"
-defaultContentLanguage = "ja"
-defaultContentLanguageInSubdir = false
-# Useful when translating.
-#enableMissingTranslationPlaceholders = true
-
-
 # Uncomment to enable support for page tags
 # disableKinds = ["taxonomy", "term"]
 
@@ -54,13 +45,13 @@ id = "UA-00000000-0"
 
 # Language configuration
 
+#defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
 [languages]
-[languages.ja]
-title = "RNA-seq Study Note"
-description = "RNA-seq 解析を用いた研究の勉強ノートのサイト"
-languageName ="Japanese"
-# Weight used for sorting.
-weight = 1
+	[languages.en]
+		title = 'RNA-seq Study Note'
+		contentDir = 'content'
+		weight = 1
 
 [markup]
   [markup.goldmark]
@@ -99,7 +90,7 @@ github_branch = "main"
 #github_project_repo = "https://github.com/google/docsy"
 
 # Specify a value here if your content directory is not in your repo's root directory
-github_subdir = "content"
+#github_subdir = "content"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 #gcs_engine_id = "011737558837375720776:fsdu1nryfng"

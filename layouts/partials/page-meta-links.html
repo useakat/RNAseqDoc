@@ -1,0 +1,34 @@
+{{ if .File }}
+{{ $pathFormatted := replace .File.Path "\\" "/" }}
+{{ $gh_repo := ($.Param "github_repo") }}
+{{ $gh_url := ($.Param "github_url") }}
+{{ $gh_subdir := ($.Param "github_subdir") }}
+{{ $gh_project_repo := ($.Param "github_project_repo") }}
+{{ $gh_branch := (default "main" ($.Param "github_branch")) }}
+
+{{ if $gh_url }}
+{{ $gh_repo := $gh_url }}
+{{ end }}
+
+{{ if and ($gh_repo) (.Site.Language.Lang) }}
+{{ $editURL := printf "%s/edit/%s/content/%s" $gh_repo $gh_branch $pathFormatted }}
+{{ $createChildURL := printf "%s/new/main/content/%s" $gh_repo (path.Dir $pathFormatted) }}
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+{{ if $gh_repo }}
+  {{ $project_repo := (default $gh_repo $gh_project_repo) }}
+  {{ $pageURL := printf "%s/tree/%s/content/%s" $gh_repo $gh_branch $pathFormatted }}
+  <a href="{{ $pageURL }}" target="_blank"><i class="fas fa-file-alt"></i> View page source</a>
+  <a href="{{ $editURL }}" target="_blank"><i class="fa fa-edit"></i> Edit this page</a>
+  <a href="{{ $createChildURL }}" target="_blank"><i class="fa fa-edit"></i> Create child page</a>
+  {{ with $gh_repo }}
+  {{ $issuesURL := printf "%s/issues/new?labels=documentation&title=Documentation: %s" $project_repo (htmlEscape $.Title )}}
+  <a href="{{ $issuesURL }}" target="_blank"><i class="fab fa-github"></i> Create documentation issue</a>
+  {{ end }}
+  {{ with $gh_repo }}
+  {{ $projectURL := printf "%s/issues/new" $project_repo }}
+  <a href="{{ $projectURL }}" target="_blank"><i class="fas fa-tasks"></i> Create project issue</a>
+  {{ end }}
+{{ end }}
+{{ end }}
+</div>
+{{ end }}
