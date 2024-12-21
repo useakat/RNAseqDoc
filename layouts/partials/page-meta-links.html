@@ -17,17 +17,18 @@
 {{ if $gh_repo }}
   {{ $project_repo := (default $gh_repo $gh_project_repo) }}
   {{ $pageURL := printf "%s/tree/%s/content/%s" $gh_repo $gh_branch $pathFormatted }}
-  <a href="{{ $pageURL }}" target="_blank"><i class="fas fa-file-alt"></i> View page source</a>
-  <a href="{{ $editURL }}" target="_blank"><i class="fa fa-edit"></i> Edit this page</a>
-  <a href="{{ $createChildURL }}" target="_blank"><i class="fa fa-edit"></i> Create child page</a>
-  {{ with $gh_repo }}
+  <a href="javascript:window.print()" class="td-print-link" aria-label="Print entire section" style="margin-bottom: 8px; display: block;"><i class="fa fa-print"></i>ページを印刷する</a>
+  <a href="{{ $editURL }}" target="_blank" style="margin-bottom: 8px; display: block;"><i class="fa fa-edit"></i>ページを編集する</a>
+  <a href="{{ $createChildURL }}" target="_blank" style="margin-bottom: 8px; display: block;"><i class="fa fa-edit"></i>サブページを作る</a>
+  <!-- {{ with $gh_repo }}
   {{ $issuesURL := printf "%s/issues/new?labels=documentation&title=Documentation: %s" $project_repo (htmlEscape $.Title )}}
   <a href="{{ $issuesURL }}" target="_blank"><i class="fab fa-github"></i> Create documentation issue</a>
   {{ end }}
   {{ with $gh_repo }}
   {{ $projectURL := printf "%s/issues/new" $project_repo }}
   <a href="{{ $projectURL }}" target="_blank"><i class="fas fa-tasks"></i> Create project issue</a>
-  {{ end }}
+  {{ end }} -->
+  <!-- <a href="{{ $pageURL }}" target="_blank"><i class="fas fa-file-alt"></i>このページのソースを見る</a> -->
 {{ end }}
 {{ end }}
 </div>

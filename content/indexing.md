@@ -1,7 +1,7 @@
 ---
 title: "indexing"
 type: docs
-weight: 10
+weight: 2
 ---
 
 # salmon によるインデックス構築
