@@ -47,9 +47,7 @@ id = "UA-00000000-0"
 
 defaultContentLanguage = "ja"
 languageCode = "ja-jp"
-#defaultContentLanguageInSubdir = false
-# Useful when translating.
-enableMissingTranslationPlaceholders = true	
+defaultContentLanguageInSubdir = true
 
 [languages]
 	[languages.ja]
@@ -60,10 +58,10 @@ enableMissingTranslationPlaceholders = true
 		[languages.ja.params]
 			description = "A Docsy example site"
 	[languages.en]
-		baseURL = "http://localhost:1314/en"
+		baseURL = "http://localhost:1313/en"
 		contentDir = "content/en"
-		#title = "英語ページ"
-		#languageName ="English"
+		title = "English"
+		languageName ="English"
 		weight = 2
 
 [markup]
