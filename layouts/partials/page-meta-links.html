@@ -13,7 +13,7 @@
 {{ $newPageURL := printf "%s/new/%s?%s" $gh_repo $gh_repo_path $newPageQS }}
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
 <a href="{{ $editURL }}" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> {{ T "post_edit_this" }}</a>
-<a href="{{ $newPageURL }}" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> {{ T "post_create_child_page" }}</a>
+<a href="{{ $newPageURL }}" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-plus-square fa-fw"></i> {{ T "post_create_child_page" }}</a>
 </div>
 {{ end }}
 {{ end }}
