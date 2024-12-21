@@ -1,7 +1,7 @@
 
 ---
 title: "RNA-seq Study Note"
-linkTitle: "Doc"
+linkTitle: "note"
 type: "docs"
 tags: ["intro"]
 weight: 20
