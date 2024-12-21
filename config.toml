@@ -13,7 +13,7 @@ enableGitInfo = true
 languageCode = "ja"
 contentDir = "content"
 defaultContentLanguage = "ja"
-#defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = false
 # Useful when translating.
 #enableMissingTranslationPlaceholders = true
 
