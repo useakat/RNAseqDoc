@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "https://improved-dollop-wrg7rxvrprjhg5v6-1314.app.github.dev"
 title = "Mostly Docs"
 
 enableRobotsTXT = true
@@ -58,7 +58,7 @@ defaultContentLanguageInSubdir = true
 		[languages.ja.params]
 			description = "A Docsy example site"
 	[languages.en]
-		baseURL = "http://localhost:1313/en"
+		baseURL = "https://improved-dollop-wrg7rxvrprjhg5v6-1314.app.github.dev/en"
 		contentDir = "content/en"
 		title = "English"
 		languageName ="English"
@@ -97,7 +97,7 @@ version_menu = "Releases"
 github_repo = "https://github.com/useakat/RNAseqDoc"
 github_branch = "multi-lang-ja"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-# github_project_repo = "https://github.com/google/docsy"
+# github_project_repo = ""
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
