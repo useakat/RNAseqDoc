@@ -1,5 +1,5 @@
 #baseURL: https://useakat.github.io/RNAseqDoc
-baseURL: "/"
+#baseURL: "/"
 title: RNA-seq 解析
 
 enableRobotsTXT: true
