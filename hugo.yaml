@@ -1,4 +1,5 @@
-baseURL: https://useakat.github.io/RNAseqDoc
+#baseURL: https://useakat.github.io/RNAseqDoc
+baseURL: "/"
 title: RNA-seq 解析
 
 enableRobotsTXT: true
@@ -13,8 +14,6 @@ languages:
   ja:
     languageName: Japanese
     contentDir: content/ja
-    time_format_default: "2006.01.02"
-    time_format_blog: "2006.01.02"
     weight: 1
 
 markup:
