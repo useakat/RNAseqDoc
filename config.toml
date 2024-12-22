@@ -1,4 +1,4 @@
-baseURL = "https://improved-dollop-wrg7rxvrprjhg5v6-1314.app.github.dev"
+baseURL = "/"
 title = "RNA-seq 解析"
 
 enableRobotsTXT = true
@@ -47,7 +47,7 @@ id = "UA-00000000-0"
 
 defaultContentLanguage = "ja"
 languageCode = "ja-jp"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [languages]
 	[languages.ja]
@@ -58,7 +58,7 @@ defaultContentLanguageInSubdir = true
 		[languages.ja.params]
 			description = "A Docsy example site"
 	[languages.en]
-		baseURL = "https://improved-dollop-wrg7rxvrprjhg5v6-1314.app.github.dev/en"
+		baseURL = "/en"
 		contentDir = "content/en"
 		title = "English"
 		languageName ="English"
