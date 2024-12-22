@@ -2,10 +2,11 @@
 ---
 title: "RNA-seq 解析"
 linkTitle: "RNA-seq 解析"
-type: "home"
-menu:
-  main:
-    weight: 20
+#type: "home"
+type: "docs"
+# menu:
+#  main:
+#    weight: 20
 
 cascade:
 - _target:
