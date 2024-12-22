@@ -1,12 +1,9 @@
 
 ---
 title: "RNA-seq 解析"
-linkTitle: "RNA-seq 解析"
+linkTitle: "note"
 #type: "home"
 type: "docs"
-# menu:
-#  main:
-#    weight: 20
 
 cascade:
 - _target:
