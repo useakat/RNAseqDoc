@@ -4,7 +4,8 @@ linkTitle: "インデックス構築"
 type: docs
 weight: 3
 description: >-
-     FSTAQデータのインデックス構築（特に salmon）についてのページ---
+     FSTAQデータのインデックス構築（特に salmon）についてのページ
+---
 ## 1. k-mer分割の処理
 
 トランスクリプト配列は、スライディングウィンドウ法を用いてk-merに分割されます。例えば、トランスクリプト "ACGTGCA" をk=3で分割すると、以下のようなk-merが生成されます：
