@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://useakat.github.io/RNAseqDoc"
 title = "RNA-seq 解析"
 
 enableRobotsTXT = true
