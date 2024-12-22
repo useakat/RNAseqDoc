@@ -1,0 +1,58 @@
+baseURL: https://useakat.github.io/RNAseqDoc
+title: RNA-seq 解析
+
+enableRobotsTXT: true
+theme: [docsy]
+enableGitInfo: true
+
+# Language configuration
+defaultContentLanguage: ja
+languageCode: ja
+
+languages:
+  ja:
+    languageName: Japanese
+    contentDir: content/ja
+    time_format_default: "2006.01.02"
+    time_format_blog: "2006.01.02"
+    weight: 1
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  section: [HTML, RSS, print]
+
+params:
+  copyright: Yoshitaro Takaesu
+  github_repo: https://github.com/useakat/RNAseqDoc
+  github_branch: main
+  offlineSearch: true
+  
+  ui:
+    sidebar_menu_compact: false
+    breadcrumb_disable: false
+    sidebar_search_disable: false
+    navbar_logo: true
+    footer_about_disable: true
+    feedback:
+      enable: false
+
+  links:
+    user:
+      - name: Twitter
+        url: https://example.org/twitter
+        icon: fab fa-twitter
+        desc: Follow us on Twitter to get the latest news!
+    developer:
+      - name: GitHub
+        url: https://github.com/useakat/RNAseqDoc
+        icon: fab fa-github
+        desc: Development takes place here!
+
+  taxonomy:
+    taxonomyCloud: [tags, categories]
+    taxonomyCloudTitle: [Tag Cloud, Cloud of Categories]
+    taxonomyPageHeader: [tags, categories]
