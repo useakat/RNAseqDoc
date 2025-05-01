@@ -1,9 +1,9 @@
 ---
 title: "RNA-seq 解析環境の構築"
-linkTitle: "観光構築"
-weight: 100
+linkTitle: "解析環境の構築"
+weight: 1
 description: >-
-     RNA-seq 解析に必要なツールを AWS EC2 にインストールする方法について説明するページ
+     RNA-seq 解析に必要なツールを AWS EC2 にインストールする方法について説明
 ---
 
 ## launch an instance in EC2
